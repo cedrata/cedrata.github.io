@@ -1,4 +1,4 @@
-<footer class="footer items-center p-4 bg-neutral text-neutral-content" id="contacts">
+<footer class="footer items-center p-4 bg-neutral text-primary" id="contacts">
 	<div class="items-center grid-flow-col">
 		<svg
 			width="36"

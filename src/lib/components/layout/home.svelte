@@ -1,6 +1,6 @@
 <script>
 	import { assets } from '$app/paths';
-	const bg = assets + '/images/home-bg.jpg';
+	const bg = assets + '/images/keyboard.jpeg';
 </script>
 <div
 	class="hero min-h-screen"
@@ -8,7 +8,7 @@
 	id = "home"
 >
 	<div class="hero-overlay bg-opacity-60" />
-	<div class="hero-content text-center text-neutral-content">
+	<div class="hero-content text-center text-base-100">
 		<div class="max-w-md">
 			<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
 			<p class="mb-5">
