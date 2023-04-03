@@ -10,17 +10,17 @@ module.exports = {
       {
         cdrtLight: {
           ...require("daisyui/src/colors/themes")["[data-theme=cyberpunk]"],
-          "primary": "#f9a9d7",
-          "secondary": "#ffccde",
-          "accent": "#fc88c0",
-          "neutral": "#222B2F",
-          "base-100": "#ECEFF4",
-          "info": "#719ED6",
-          "success": "#20884A",
-          "warning": "#F6D06A",
-          "error": "#E76E70",
-        }
+          "primary": "#661AE6",
+          "secondary": "#D926AA",
+          "accent": "#1FB2A5",
+          "neutral": "#191D24",
+          "base-100": "#2A303C",
+          "info": "#3ABFF8",
+          "success": "#36D399",
+          "warning": "#FBBD23",
+          "error": "#F87272",
+        },
       }
     ]
-  }
+}
 }
