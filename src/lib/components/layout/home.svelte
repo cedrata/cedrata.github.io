@@ -1,29 +1,26 @@
 <script>
-	import { assets } from '$app/paths';
-
 	/** @type {string} */
-	const bg = assets + '/images/keyboard.jpeg';
+	export let propic1;
 
-	/** @returns {void} */
-	function scrollHandler() {
-		// TODO: Implementation...
-	}
+	/** @type {string}*/
+	export let id;
 </script>
 
-<div
-	class="hero lg:h-screen"
-	id = "home"
-	style="background-image: url('{bg}');"
->
-	<div class="hero-overlay bg-opacity-60" />
-	<div class="hero-content text-center text-base-100">
-		<div class="max-w-md">
-			<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-			<p class="mb-5">
-				Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-				quasi. In deleniti eaque aut repudiandae et a id nisi.
-			</p>
-			<button class="btn btn-primary">Get Started</button>
+<div {id}>
+	<div class="hero lg:h-screen bg-base-200 bg-gradient-to-b from-primary to-secondary">
+		<div class="hero-overlay bg-opacity-25" />
+		<div class="hero-content w-screen flex-col lg:flex-row-reverse justify-between max-w-[1240px]">
+			<div class="avatar shadow-xl">
+				<div class="w-auto rounded">
+					<img alt="propic one" src={propic1} class="max-w-md" />
+				</div>
+			</div>
+			<div class="max-w-md">
+				<h1 class="mb-5 text-5xl font-bold">Hello, world!</h1>
+				<p>I'm Luca, a young and passionade full stack developer, but there's more...</p>
+				<p class="mb-5">Scroll down to know more about me!</p>
+				<button class="btn btn-primary">Let's go</button>
+			</div>
 		</div>
 	</div>
 </div>
