@@ -1,11 +1,19 @@
 <script>
 	import { assets } from '$app/paths';
+
+	/** @type {string} */
 	const bg = assets + '/images/keyboard.jpeg';
+
+	/** @returns {void} */
+	function scrollHandler() {
+		// TODO: Implementation...
+	}
 </script>
+
 <div
-	class="hero min-h-screen"
-	style="background-image: url('{bg}');"
+	class="hero lg:h-screen"
 	id = "home"
+	style="background-image: url('{bg}');"
 >
 	<div class="hero-overlay bg-opacity-60" />
 	<div class="hero-content text-center text-base-100">
