@@ -17,7 +17,7 @@
 			</div>
 			<div class="max-w-md">
 				<h1 class="mb-5 text-5xl font-bold">Hello, world!</h1>
-				<p>I'm Luca, a young and passionade full stack developer, but there's more...</p>
+				<p>I'm Luca, a young and passionade full-stack and software developer, but there's more...</p>
 				<p class="mb-5">Scroll down to know more about me!</p>
 				<button class="btn btn-primary">Let's go</button>
 			</div>
