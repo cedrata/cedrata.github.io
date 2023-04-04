@@ -3,7 +3,7 @@
 	const bc = assets + '/images/business-card.jpg';
 </script>
 
-<div class="hero min-h-screen bg-base-200" id="about">
+<div class="hero min-h-screen" id="about">
 	<div class="hero-content w-screen flex-col lg:flex-row">
 		<img alt="business1" src={bc} class="max-w-sm rounded-lg shadow-2xl lg:scale-100 scale-75" />
 		<div>
@@ -16,7 +16,7 @@
 		</div>
 	</div>
 </div>
-<div class="hero min-h-screen bg-base-200">
+<div class="hero min-h-screen">
 	<div class="hero-content w-screen flex-col lg:flex-row lg:hidden">
 		<img alt="business2" src={bc} class="max-w-sm rounded-lg shadow-2xl scale-75" />
 		<div>
