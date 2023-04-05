@@ -42,7 +42,7 @@
 			</div>
 			<div class="max-w-md drop-shadow-2x max-lg:text-center">
 				<h1 class="mb-5 text-5xl font-bold">Hello, world!</h1>
-				<p class="mb-5">
+				<p class="mb-5 text-lg">
 					I'm Luca, a young and passionade full-stack and software developer, but there's more...
 					Scroll down to know more about me!
 				</p>
