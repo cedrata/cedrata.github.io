@@ -1,7 +1,5 @@
 <script>
-	import About from '$lib/components/layout/about.svelte';
 	import Footer from '$lib/components/layout/footer.svelte';
-	import Navbar from '$lib/components/layout/navbar.svelte';
 	import { assets } from '$app/paths';
 
 	/** @type {string} */
@@ -28,22 +26,17 @@
 		viewBox="0 0 1440 320"
 		class="absolute bottom-0 max-lg:hidden"
 		><path
-			class="fill-base-100"
+			class="fill-primary-focus"
 			fill-opacity="1"
 			d="M0,96L60,80C120,64,240,32,360,53.3C480,75,600,149,720,186.7C840,224,960,224,1080,240C1200,256,1320,288,1380,304L1440,320L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
 		/></svg
 	>
 	<div class="hero lg:h-screen min-h-screen">
-		<div class="hero-content w-screen flex-col lg:flex-row-reverse justify-between max-w-[1240px]">
-			<div class="avatar shadow-xl">
-				<div class="w-auto rounded">
-					<img alt="propic one" src={propic1} class="max-w-md" />
-				</div>
-			</div>
-			<div class="max-w-md drop-shadow-2x max-lg:text-center">
-				<h1 class="mb-5 text-5xl font-bold">Hello, world!</h1>
-				<p class="mb-5 text-lg">
-					I'm Luca, a young and passionade full-stack and software developer, but there's more...
+		<div class="hero-content text-center max-w-[1240px]">
+			<div class="max-w-md drop-shadow-2x">
+				<h1 class="mb-5 text-5xl font-bold">Hello, world! I'm Luca</h1>
+				<p class="mb-5 text-lg text-justify">
+					Young passionate full-stack and software developer, but there's more...
 					Scroll down to know more about me!
 				</p>
 				<button class="btn btn-info" on:click={() => scrollDown('home')}>Let's go</button>
@@ -53,8 +46,40 @@
 </section>
 <!-- </div> -->
 <!-- <div class="bg-base-200 bg-gradient-to-b from-secondary to-accent" > -->
-<div class="relative bg-gradient-to-b from-base-100 to-base-300">
-	<About />
-</div>
-<!-- </div> -->
+<section
+	id="about"
+	class="relative flex items-center justify-center bg-gradient-to-b from-primary-focus to-secondary-focus"
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="0 0 1440 320"
+		class="absolute bottom-0 max-lg:hidden"
+		style="transform: scale(-1,1);"
+		><path
+			class="fill-primary-focus"
+			fill-opacity="1"
+			d="M0,96L60,80C120,64,240,32,360,53.3C480,75,600,149,720,186.7C840,224,960,224,1080,240C1200,256,1320,288,1380,304L1440,320L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+		/></svg
+	>
+	<div
+		class="z-10 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-[1rem] max-md:flex-col lg:place-items-center max-w-[1240px] min-h-screen p-[1rem]"
+	>
+		<div class="lg:col-start-1 lg:row-start-1 text-lg">
+			<h3 class="text-3xl font-bold mb-5">About me</h3>
+			<p class="text-lg text-justify">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Posuere morbi leo urna molestie at elementum eu facilisis.
+				Quisque egestas diam in arcu cursus euismod quis viverra. Adipiscing at in tellus integer
+				feugiat scelerisque. Cum sociis natoque penatibus et magnis dis parturient montes. Donec
+				enim diam vulputate ut pharetra sit amet aliquam. Massa ultricies mi quis hendrerit. Tortor
+				pretium viverra suspendisse potenti nullam ac tortor vitae purus. Aliquam etiam erat velit
+				scelerisque in dictum non consectetur a. Et netus et malesuada fames ac.
+			</p>
+		</div>
+		<div class="lg:col-start-1 lg:row-start-2 max-md:hidden">
+			<!-- <img src={assets + '/images/keyboard.jpeg'} alt="the tools"/> -->
+			<img src={assets + '/images/keyboard.jpeg'} alt="the tools"/>
+		</div>
+	</div>
+</section>
 <Footer />
