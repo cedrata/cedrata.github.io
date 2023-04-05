@@ -3,7 +3,7 @@
 	import { assets } from '$app/paths';
 
 	/** @type {string} */
-	const propic1 = assets + '/images/seriuos.jpeg';
+	const propic1 = assets + '/images/serious.jpeg';
 
 	/**
 	 * @param {string} id
@@ -32,12 +32,15 @@
 		/></svg
 	>
 	<div class="hero lg:h-screen min-h-screen">
-		<div class="hero-content text-center max-w-[1240px]">
+		<div class="hero-content w-screen flex-col lg:flex-row-reverse justify-between max-w-[1240px]">
+			<div>
+				<img alt="propic one" src={propic1} class="max-w-sm drop-shadow-2xl px-[1rem]" />
+			</div>
 			<div class="max-w-md drop-shadow-2x">
 				<h1 class="mb-5 text-5xl font-bold">Hello, world! I'm Luca</h1>
 				<p class="mb-5 text-lg text-justify">
-					Young passionate full-stack and software developer, but there's more...
-					Scroll down to know more about me!
+					Young passionate full-stack and software developer, but there's more... Scroll down to
+					know more about me!
 				</p>
 				<button class="btn btn-info" on:click={() => scrollDown('home')}>Let's go</button>
 			</div>
@@ -76,9 +79,8 @@
 				scelerisque in dictum non consectetur a. Et netus et malesuada fames ac.
 			</p>
 		</div>
-		<div class="lg:col-start-1 lg:row-start-2 max-md:hidden">
-			<!-- <img src={assets + '/images/keyboard.jpeg'} alt="the tools"/> -->
-			<img src={assets + '/images/keyboard.jpeg'} alt="the tools"/>
+		<div class="lg:col-start-2 lg:row-start-2">
+			<img src={assets + '/images/keyboard.jpeg'} alt="the tools" class="shadow-2xl"/>
 		</div>
 	</div>
 </section>
