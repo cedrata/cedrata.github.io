@@ -51,7 +51,7 @@
 <!-- <div class="bg-base-200 bg-gradient-to-b from-secondary to-accent" > -->
 <section
 	id="about"
-	class="relative flex items-center justify-center bg-gradient-to-b from-primary-focus to-secondary-focus"
+	class="relative flex items-center justify-center bg-gradient-to-b from-primary to-primary-focus lg:from-primary-focus lg:to-secondary-focus"
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@
 				scelerisque in dictum non consectetur a. Et netus et malesuada fames ac.
 			</p>
 		</div>
-		<div class="lg:col-start-2 lg:row-start-2 lg:row-span-2">
+		<div class="lg:col-start-2 lg:row-start-2 lg:row-span-2 max-lg:hidden">
 			<img src={assets + '/images/keyboard.jpeg'} alt="the tools" class="shadow-2xl"/>
 		</div>
 	</div>
