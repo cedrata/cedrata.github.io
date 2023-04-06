@@ -37,12 +37,14 @@
 				<img alt="propic one" src={propic1} class="max-w-sm drop-shadow-2xl px-[1rem]" />
 			</div>
 			<div class="max-w-md drop-shadow-2x">
-				<h1 class="mb-5 text-5xl font-bold">Hello, world! I'm Luca</h1>
+				<h1 class="mb-5 text-5xl font-bold max-lg:text-center">Hello, world! I'm Luca</h1>
 				<p class="mb-5 text-lg text-justify">
 					Young passionate full-stack and software developer, but there's more... Scroll down to
 					know more about me!
 				</p>
-				<button class="btn btn-info" on:click={() => scrollDown('home')}>Let's go</button>
+				<div class="max-lg:flex max-lg:justify-center ">
+					<button class="btn btn-info" on:click={() => scrollDown('home')}>Let's go</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -51,7 +53,7 @@
 <!-- <div class="bg-base-200 bg-gradient-to-b from-secondary to-accent" > -->
 <section
 	id="about"
-	class="relative flex items-center justify-center bg-gradient-to-b from-primary to-primary-focus lg:from-primary-focus lg:to-secondary-focus"
+	class="relative flex items-center justify-center bg-gradient-to-b from-primary to-primary-focus lg:from-primary-focus lg:to-secondary-focus p-[1rem]"
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -65,10 +67,10 @@
 		/></svg
 	>
 	<div
-		class="z-10 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-[1rem] max-md:flex-col lg:place-items-center max-w-[1240px] min-h-screen lg:max-h-screen p-[1rem]"
+		class="z-10 max-lg:flex lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-[1rem] max-md:flex-col lg:place-items-center max-lg:max-w-md max-w-[80rem] min-h-screen lg:max-h-screen lg:p-[1rem]"
 	>
 		<div class="lg:col-start-1 lg:row-start-1 lg:row-span-2 text-lg">
-			<h3 class="text-3xl font-bold mb-5">About me</h3>
+			<h3 class="text-3xl font-bold mb-5 max-lg:text-center">About me</h3>
 			<p class="text-lg text-justify">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 				labore et dolore magna aliqua. Posuere morbi leo urna molestie at elementum eu facilisis.
@@ -80,7 +82,7 @@
 			</p>
 		</div>
 		<div class="lg:col-start-2 lg:row-start-2 lg:row-span-2 max-lg:hidden">
-			<img src={assets + '/images/keyboard.jpeg'} alt="the tools" class="shadow-2xl"/>
+			<img src={assets + '/images/keyboard.jpeg'} alt="the tools" class="shadow-2xl" />
 		</div>
 	</div>
 </section>
