@@ -65,9 +65,9 @@
 		/></svg
 	>
 	<div
-		class="z-10 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-[1rem] max-md:flex-col lg:place-items-center max-w-[1240px] min-h-screen p-[1rem]"
+		class="z-10 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-[1rem] max-md:flex-col lg:place-items-center max-w-[1240px] min-h-screen lg:max-h-screen p-[1rem]"
 	>
-		<div class="lg:col-start-1 lg:row-start-1 text-lg">
+		<div class="lg:col-start-1 lg:row-start-1 lg:row-span-2 text-lg">
 			<h3 class="text-3xl font-bold mb-5">About me</h3>
 			<p class="text-lg text-justify">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -79,7 +79,7 @@
 				scelerisque in dictum non consectetur a. Et netus et malesuada fames ac.
 			</p>
 		</div>
-		<div class="lg:col-start-2 lg:row-start-2">
+		<div class="lg:col-start-2 lg:row-start-2 lg:row-span-2">
 			<img src={assets + '/images/keyboard.jpeg'} alt="the tools" class="shadow-2xl"/>
 		</div>
 	</div>
