@@ -67,7 +67,7 @@
 		/></svg
 	>
 	<div
-		class="z-10 max-lg:flex max-lg:items-center lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-[1rem] max-md:flex-col lg:place-items-center lg:max-h-screen max-lg:max-w-md max-w-[77.5rem] p-[1rem]"
+		class="z-10 max-lg:flex max-lg:items-center lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-[1rem] max-md:flex-col lg:place-items-center lg:h-screen max-lg:max-w-md max-w-[77.5rem] p-[1rem]"
 	>
 		<div class="lg:col-start-1 lg:row-start-1 lg:row-span-2 text-lg">
 			<h3 class="text-3xl font-bold mb-5 max-lg:text-center">About me</h3>
