@@ -49,7 +49,7 @@
 						Young passionate full-stack and software developer, but there's more... Scroll down to
 						know more about me!
 					</p>
-					<div class="flex justify-evenly">
+					<div class="flex justify-between">
 						<button class="btn btn-info lg:justify-self-start" on:click={() => scrollDown('home')}
 							>Let's go</button
 						>
