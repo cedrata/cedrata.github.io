@@ -105,14 +105,14 @@
 			<div class="lg:col-start-1 lg:row-start-1 lg:row-span-2 text-lg">
 				<h3 class="text-3xl font-bold mb-5 max-lg:text-center">About me</h3>
 				<p class="text-lg text-justify">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua. Posuere morbi leo urna molestie at elementum eu
-					facilisis. Quisque egestas diam in arcu cursus euismod quis viverra. Adipiscing at in
-					tellus integer feugiat scelerisque. Cum sociis natoque penatibus et magnis dis parturient
-					montes. Donec enim diam vulputate ut pharetra sit amet aliquam. Massa ultricies mi quis
-					hendrerit. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus.
-					Aliquam etiam erat velit scelerisque in dictum non consectetur a. Et netus et malesuada
-					fames ac.
+					I’m a young and passionate developer having a blast in learning whatever I can about
+					coding and trying to be a better programmer everyday. One of my greatest passion is
+					playing guitar, growing up the I’ve started making my own music and got interested in
+					audio DSP, especially understanding how to create my own audio plug-ins. Currently
+					starting my own plug-in development project to create and provide free and open source
+					products. Other than that I’ve always been interested in backend development and currently
+					started to learn more about frontend as well and for this precise reason are reading this
+					portfolio, it’s my attempt to learn more about.
 				</p>
 			</div>
 			<div class="lg:col-start-2 lg:row-start-2 lg:row-span-2 max-lg:hidden">
@@ -129,56 +129,40 @@
 		>
 			<div class="lg:col-start-2 lg:row-start-1 text-lg max-lg:mb-[1rem]">
 				<h3 class="text-3xl font-bold mb-5 max-lg:text-center ">My experience</h3>
-				<p class="text-lg text-justify lg:hidden">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua. Posuere morbi leo urna molestie at elementum eu
-					facilisis. Quisque egestas diam in arcu cursus euismod quis viverra. Adipiscing at in
-					tellus integer feugiat scelerisque. Cum sociis natoque penatibus et magnis dis parturient
-					montes.
-				</p>
-				<p class="text-lg text-justify max-lg:hidden">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua. Posuere morbi leo urna molestie at elementum eu
-					facilisis. Quisque egestas diam in arcu cursus euismod quis viverra. Adipiscing at in
-					tellus integer feugiat scelerisque. Cum sociis natoque penatibus et magnis dis parturient
-					montes. Donec enim diam vulputate ut pharetra sit amet aliquam. Massa ultricies mi quis
-					hendrerit. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus.
-					Aliquam etiam erat velit scelerisque in dictum non consectetur a. Et netus et malesuada
-					fames ac.
+				<p class="text-lg text-justify">
+					My first work experience has been an introduction to the real world of software
+					development learning the usage of some design patterns in real scenarios like the
+					dependency injection, learning more about C# and native applications development creating
+					internal tools with WPF and maintaining the code base to handle clients digital billing
+					workflows. Later on I moved to my current team as a software IoT cloud developer for in
+					energy utilities field where my journey learning and using AWS started, and mastering new
+					tech like containerization (docker), CICD pipelines and more.
 				</p>
 			</div>
 			<div class="lg:col-start-1 lg:row-start-1 text-lg w-full">
 				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">skill</p>
-					<progress class="progress lg:w-1/2 w-2/3" value="0" max="100" />
+					<p class="w-1/3">AWS</p>
+					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="60" max="100" />
 				</div>
 				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">skill</p>
-					<progress class="progress lg:w-1/2 w-2/3" value="0" max="100" />
+					<p class="w-1/3">Python</p>
+					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="80" max="100" />
 				</div>
 				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">skill</p>
-					<progress class="progress lg:w-1/2 w-2/3" value="0" max="100" />
+					<p class="w-1/3">C++</p>
+					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="70" max="100" />
 				</div>
 				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">skill</p>
-					<progress class="progress lg:w-1/2 w-2/3" value="0" max="100" />
+					<p class="w-1/3">REST API</p>
+					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="75" max="100" />
 				</div>
 				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">skill</p>
-					<progress class="progress lg:w-1/2 w-2/3" value="0" max="100" />
+					<p class="w-1/3">Backend</p>
+					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="65" max="100" />
 				</div>
 				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">skill</p>
-					<progress class="progress lg:w-1/2 w-2/3" value="0" max="100" />
-				</div>
-				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">skill</p>
-					<progress class="progress lg:w-1/2 w-2/3" value="0" max="100" />
-				</div>
-				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">skill</p>
-					<progress class="progress lg:w-1/2 w-2/3" value="0" max="100" />
+					<p class="w-1/3">Frontend</p>
+					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="50" max="100" />
 				</div>
 			</div>
 		</div>
