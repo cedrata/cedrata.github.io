@@ -2,8 +2,16 @@
 	import Footer from '$lib/components/layout/footer.svelte';
 	import { assets } from '$app/paths';
 
-	/** @type {string} */
 	const propic1 = assets + '/images/serious.jpeg';
+
+	const projects = [
+		{
+			title: 'Brainfuck Compiler',
+			description:
+				'A simple brainfuck compiler to learn more about svelte, tailwind and have fun with the CodeMirror library',
+			href: 'https://cedrata.github.io/brainfuck-compiler'
+		}
+	];
 
 	/**
 	 * @param {string} id
@@ -124,11 +132,22 @@
 		id="experience"
 		class="relative flex items-center justify-center lg:bg-gradient-to-b lg:from-primary-focus lg:to-secondary-focus min-h-screen lg:max-h-screen"
 	>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 1440 320"
+			class="absolute bottom-0 max-lg:hidden"
+			style="transform: scale(-1,1);"
+			><path
+				class="fill-secondary"
+				fill-opacity="1"
+				d="M0,160L48,181.3C96,203,192,245,288,256C384,267,480,245,576,224C672,203,768,181,864,181.3C960,181,1056,203,1152,186.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+			/></svg
+		>
 		<div
 			class="z-10 max-lg:flex max-lg:flex-col max-lg:items-center lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-[1rem] max-md:flex-col lg:place-items-center lg:max-h-screen max-lg:max-w-md max-w-[77.5rem] p-[2rem]"
 		>
 			<div class="lg:col-start-2 lg:row-start-1 text-lg max-lg:mb-[1rem]">
-				<h3 class="text-3xl font-bold mb-5 max-lg:text-center ">My experience</h3>
+				<h3 class="text-3xl font-bold mb-5 max-lg:text-center">My experience</h3>
 				<p class="text-lg text-justify">
 					My first work experience has been an introduction to the real world of software
 					development learning the usage of some design patterns in real scenarios like the
@@ -164,6 +183,27 @@
 					<p class="w-1/3">Frontend</p>
 					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="50" max="100" />
 				</div>
+			</div>
+		</div>
+	</section>
+	<section
+		id="projects"
+		class="relative flex items-center justify-center lg:bg-gradient-to-b lg:from-secondary lg:to-primary-focus min-h-screen lg:max-h-screen"
+	>
+		<div class="grid grid-cols-1 justify-items-center max-w-[77.5rem] w-full px-8">
+			<h3 class="text-3xl font-bold mb-5">Some projects</h3>
+			<div class="flex lg:flex-row flex-wrap max-lg:max-w-md max-md:flex-col lg:justify-evenly justify-center">
+				{#each projects as p}
+					<div class="card lg:w-96 w-full bg-base-100 shadow-xl lg:m-4 max-lg:mb-8">
+						<div class="card-body">
+							<h2 class="card-title">{p.title}</h2>
+							<p>{p.description}</p>
+							<div class="card-actions justify-center">
+								<button class="btn btn-primary"><a href={p.href}>Have a Look!</a></button>
+							</div>
+						</div>
+					</div>
+				{/each}
 			</div>
 		</div>
 	</section>
