@@ -4,6 +4,33 @@
 
 	const propic1 = assets + '/images/serious.jpeg';
 
+	const skills = [
+		{
+			title: 'AWS',
+			value: '60'
+		},
+		{
+			title: 'Python',
+			value: '80'
+		},
+		{
+			title: 'C++',
+			value: '70'
+		},
+		{
+			title: 'REST API',
+			value: '75'
+		},
+		{
+			title: 'Backend',
+			value: '65'
+		},
+		{
+			title: 'Frontend',
+			value: '50'
+		}
+	];
+
 	const projects = [
 		{
 			title: 'Brainfuck Compiler',
@@ -159,30 +186,12 @@
 				</p>
 			</div>
 			<div class="lg:col-start-1 lg:row-start-1 text-lg w-full">
-				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">AWS</p>
-					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="60" max="100" />
-				</div>
-				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">Python</p>
-					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="80" max="100" />
-				</div>
-				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">C++</p>
-					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="70" max="100" />
-				</div>
-				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">REST API</p>
-					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="75" max="100" />
-				</div>
-				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">Backend</p>
-					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="65" max="100" />
-				</div>
-				<div class="mb-[1rem] max-lg:flex max-lg:items-center">
-					<p class="w-1/3">Frontend</p>
-					<progress class="progress progress-accent lg:w-1/2 w-2/3" value="50" max="100" />
-				</div>
+				{#each skills as s}
+					<div class="mb-[1rem] max-lg:flex max-lg:items-center">
+						<p class="w-1/3">{s.title}</p>
+						<progress class="progress progress-accent lg:w-1/2 w-2/3" value={s.value} max="100" />
+					</div>
+				{/each}
 			</div>
 		</div>
 	</section>
@@ -192,7 +201,9 @@
 	>
 		<div class="grid grid-cols-1 justify-items-center max-w-[77.5rem] w-full px-8">
 			<h3 class="text-3xl font-bold mb-5">Some projects</h3>
-			<div class="flex lg:flex-row flex-wrap max-lg:max-w-md max-md:flex-col lg:justify-evenly justify-center">
+			<div
+				class="flex lg:flex-row flex-wrap max-lg:max-w-md max-md:flex-col lg:justify-evenly justify-center"
+			>
 				{#each projects as p}
 					<div class="card lg:w-96 w-full bg-base-100 shadow-xl lg:m-4 max-lg:mb-8">
 						<div class="card-body">
