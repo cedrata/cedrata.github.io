@@ -31,12 +31,21 @@
 		}
 	];
 
+	/**
+	 * @type {{title: string, description: string, href: string}[]}
+	 */
 	const projects = [
 		{
 			title: 'Brainfuck Compiler',
 			description:
 				'A simple brainfuck compiler to learn more about svelte, tailwind and have fun with the CodeMirror library',
 			href: 'https://cedrata.github.io/brainfuck-compiler'
+		},
+		{
+			title: 'SvelteKit protected route',
+			description:
+				'A template with mockup data to use when creating a dynamic web page with protected routes with login',
+			href: 'https://github.com/ReadyCodeToUse/fe-sveltekit-protected-routes'
 		}
 	];
 
@@ -205,12 +214,12 @@
 				class="flex lg:flex-row flex-wrap max-lg:max-w-md max-md:flex-col lg:justify-evenly justify-center"
 			>
 				{#each projects as p}
-					<div class="card lg:w-96 w-full bg-base-100 shadow-xl lg:m-4 max-lg:mb-8">
-						<div class="card-body">
+					<div class="card lg:w-96 bg-base-100 shadow-xl lg:m-4 max-lg:mb-8">
+						<div class="card-body text-justify items-center">
 							<h2 class="card-title">{p.title}</h2>
 							<p>{p.description}</p>
 							<div class="card-actions justify-center">
-								<button class="btn btn-primary"><a href={p.href}>Have a Look!</a></button>
+								<a href={p.href} class="btn btn-primary">Have a Look!</a>
 							</div>
 						</div>
 					</div>
