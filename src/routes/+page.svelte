@@ -2,7 +2,7 @@
 	import Footer from '$lib/components/layout/footer.svelte';
 	import { assets } from '$app/paths';
 
-	const propic1 = assets + '/images/serious.jpeg';
+	const propic1 = assets + '/images/serious.jpg';
 
 	const skills = [
 		{
